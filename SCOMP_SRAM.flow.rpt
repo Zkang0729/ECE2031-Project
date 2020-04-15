@@ -1,5 +1,5 @@
 Flow report for SCOMP_SRAM
-Sun Apr 05 01:56:23 2020
+Wed Apr 15 00:08:33 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Sun Apr 05 01:56:23 2020        ;
+; Flow Status                        ; Successful - Wed Apr 15 00:08:33 2020        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; SCOMP_SRAM                                   ;
 ; Top-level Entity Name              ; SCOMP_SRAM                                   ;
@@ -46,10 +46,10 @@ applicable agreement for further details.
 ; Device                             ; EP2C35F672C6                                 ;
 ; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; No                                           ;
-; Total logic elements               ; 1,496 / 33,216 ( 5 % )                       ;
-;     Total combinational functions  ; 1,479 / 33,216 ( 4 % )                       ;
-;     Dedicated logic registers      ; 220 / 33,216 ( < 1 % )                       ;
-; Total registers                    ; 220                                          ;
+; Total logic elements               ; 1,520 / 33,216 ( 5 % )                       ;
+;     Total combinational functions  ; 1,507 / 33,216 ( 5 % )                       ;
+;     Dedicated logic registers      ; 201 / 33,216 ( < 1 % )                       ;
+; Total registers                    ; 201                                          ;
 ; Total pins                         ; 43 / 475 ( 9 % )                             ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 32,768 / 483,840 ( 7 % )                     ;
@@ -63,25 +63,25 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/05/2020 01:56:01 ;
+; Start date & time ; 04/15/2020 00:08:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SCOMP_SRAM          ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                   ;
-+------------------------------------+--------------------------------+---------------+-------------+----------------+
-; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
-+------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 61811222300108.158606616107156 ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP             ; 85                             ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP             ; 0                              ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                       ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; --          ; Top            ;
-; SMART_RECOMPILE                    ; On                             ; Off           ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
-+------------------------------------+--------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                    ;
++------------------------------------+---------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+---------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 136784548208503.158692368815516 ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                              ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                               ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                        ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; --          ; Top            ;
+; SMART_RECOMPILE                    ; On                              ; Off           ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -89,11 +89,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:05     ; 1.0                     ; 266 MB              ; 00:00:06                           ;
-; Fitter                  ; 00:00:09     ; 1.0                     ; 315 MB              ; 00:00:10                           ;
-; Assembler               ; 00:00:02     ; 1.0                     ; 278 MB              ; 00:00:02                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 190 MB              ; 00:00:02                           ;
-; Total                   ; 00:00:17     ; --                      ; --                  ; 00:00:20                           ;
+; Analysis & Synthesis    ; 00:00:04     ; 1.0                     ; 259 MB              ; 00:00:04                           ;
+; Fitter                  ; 00:00:14     ; 1.0                     ; 290 MB              ; 00:00:14                           ;
+; Assembler               ; 00:00:03     ; 1.0                     ; 263 MB              ; 00:00:03                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 175 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:22     ; --                      ; --                  ; 00:00:22                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -102,10 +102,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; LAPTOP-R2OHTR8E  ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; LAPTOP-R2OHTR8E  ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; LAPTOP-R2OHTR8E  ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; LAPTOP-R2OHTR8E  ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; Windows-Ilya     ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; Windows-Ilya     ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; Windows-Ilya     ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; Windows-Ilya     ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 
