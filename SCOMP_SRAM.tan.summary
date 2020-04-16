@@ -5,42 +5,32 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.992 ns
-From           : CHIP_EMULATOR:inst4|SRAM~249
-To             : SRAM_DQ[9]
+Actual Time    : 15.783 ns
+From           : CHIP_EMULATOR:inst4|SRAM~107
+To             : SRAM_DQ[11]
 From Clock     : clk_50
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Clock Setup: 'altpll0:inst1|altpll:altpll_component|_clk1'
-Slack          : -7.885 ns
+Slack          : -7.910 ns
 Required Time  : 100.00 MHz ( period = 10.000 ns )
-Actual Time    : 38.80 MHz ( period = 25.770 ns )
-From           : CHIP_EMULATOR:inst4|SRAM~162
+Actual Time    : 38.73 MHz ( period = 25.820 ns )
+From           : CHIP_EMULATOR:inst4|SRAM~132
 To             : SRAM:inst2|SRAM_ADDR_ALTERA_SYNTHESIZED[16]
 From Clock     : altpll0:inst1|altpll:altpll_component|_clk1
 To Clock       : altpll0:inst1|altpll:altpll_component|_clk1
 Failed Paths   : 5376
 
 Type           : Clock Setup: 'altpll0:inst1|altpll:altpll_component|_clk0'
-Slack          : -5.575 ns
+Slack          : -5.604 ns
 Required Time  : 12.50 MHz ( period = 80.000 ns )
 Actual Time    : N/A
-From           : CHIP_EMULATOR:inst4|SRAM~13
-To             : SCOMP:inst|AC[13]
+From           : CHIP_EMULATOR:inst4|SRAM~214
+To             : SCOMP:inst|AC[6]
 From Clock     : altpll0:inst1|altpll:altpll_component|_clk1
 To Clock       : altpll0:inst1|altpll:altpll_component|_clk0
 Failed Paths   : 512
-
-Type           : Clock Hold: 'altpll0:inst1|altpll:altpll_component|_clk1'
-Slack          : 0.182 ns
-Required Time  : 100.00 MHz ( period = 10.000 ns )
-Actual Time    : N/A
-From           : CHIP_EMULATOR:inst4|SRAM~224
-To             : CHIP_EMULATOR:inst4|SRAM~160
-From Clock     : altpll0:inst1|altpll:altpll_component|_clk1
-To Clock       : altpll0:inst1|altpll:altpll_component|_clk1
-Failed Paths   : 0
 
 Type           : Clock Hold: 'altpll0:inst1|altpll:altpll_component|_clk0'
 Slack          : 0.391 ns
@@ -50,6 +40,16 @@ From           : SCOMP:inst|MW
 To             : SCOMP:inst|MW
 From Clock     : altpll0:inst1|altpll:altpll_component|_clk0
 To Clock       : altpll0:inst1|altpll:altpll_component|_clk0
+Failed Paths   : 0
+
+Type           : Clock Hold: 'altpll0:inst1|altpll:altpll_component|_clk1'
+Slack          : 0.391 ns
+Required Time  : 100.00 MHz ( period = 10.000 ns )
+Actual Time    : N/A
+From           : SRAM:inst2|SRAM_WE_N
+To             : SRAM:inst2|SRAM_WE_N
+From Clock     : altpll0:inst1|altpll:altpll_component|_clk1
+To Clock       : altpll0:inst1|altpll:altpll_component|_clk1
 Failed Paths   : 0
 
 Type           : Total number of failed paths

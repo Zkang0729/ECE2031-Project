@@ -56,9 +56,9 @@ set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE SCOMP_SRAM_sim.vwf
 set_global_assignment -name END_TIME "30 us"
 set_global_assignment -name SMART_RECOMPILE ON
 set_global_assignment -name VHDL_FILE SRAM.vhd
+set_global_assignment -name VHDL_FILE lpm_ff0.vhd
 set_global_assignment -name VHDL_FILE IO_DECODER.vhd
 set_global_assignment -name VHDL_FILE lpm_bustri_oe0.vhd
-set_global_assignment -name VHDL_FILE lpm_ff0.vhd
 set_global_assignment -name VHDL_FILE lpm_ff1.vhd
 set_global_assignment -name VHDL_FILE altpll0.vhd
 set_global_assignment -name VHDL_FILE SCOMP.vhd

@@ -31,29 +31,32 @@ Main:
 	OUT		SRAM_LOWER_ADDR
 	
 	; Write a value
-	LOADI   10
+	LOADI   3
 	OUT		SRAM_DATA
 	
 	; Read a value
-	LOADI	5
+	LOADI	5 ; Make sure values changed
 	IN		SRAM_DATA
 	
-	LOADI 	7
+	; Increment address
+	LOADI 	9
 	OUT 	SRAM_INC_DATA
 	LOADI 	8
 	OUT		SRAM_INC_DATA
 	
-	IN		SRAM_LOWER_ADDR
+	; Jump back to beginning
+	LOADI	2
+	OUT		SRAM_ADDR_JNEG
 	
-	LOADI	5
-	OUT		SRAM_LOWER_ADDR
-	IN		SRAM_DATA
-	LOADI 	6
-	OUT		SRAM_LOWER_ADDR
+	; Read that initial value of 5
 	IN		SRAM_DATA
 	
-	LOADI 	10
-	OUT 	SRAM_ADDR_JPOS
+	; Jump back up to
+	LOADI	2
+	OUT		SRAM_ADDR_JPOS
+	
+	; Read the (lower) address
+	IN 		SRAM_LOWER_ADDR
 
 	
 Done:
