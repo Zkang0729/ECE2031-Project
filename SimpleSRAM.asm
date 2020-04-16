@@ -27,7 +27,7 @@ Main:
 	; Set the upper address, even though the emulator doesn't support it
 	LOADI   1
 	OUT		SRAM_UPPER_ADDR
-	LOADI	5
+	LOADI	5 ; Distinguish between the LOADI 1 and and the Read Value from the SRAM_UPPER_ADDR
 	IN 		SRAM_UPPER_ADDR
 	
 	; Set the lower address

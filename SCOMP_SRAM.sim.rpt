@@ -1,5 +1,5 @@
 Simulator report for SCOMP_SRAM
-Thu Apr 16 09:46:03 2020
+Thu Apr 16 11:45:01 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -3443,9 +3443,9 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 16 09:46:01 2020
+    Info: Processing started: Thu Apr 16 11:44:58 2020
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off SCOMP_SRAM -c SCOMP_SRAM
-Info: Using vector source file "C:/users/ryan/My Documents/workspace_quartus/ECE2031-Project/SCOMP_SRAM_sim.vwf"
+Info: Using vector source file "C:/Users/Harry Kang/Desktop/ECE2031-Project/SCOMP_SRAM_sim.vwf"
 Info: Overwriting simulation input file with simulation results
     Info: A backup of SCOMP_SRAM_sim.vwf called SCOMP_SRAM.sim_ori.vwf has been created in the db folder
 Info: Simulation end time 30.0 us did not reach the end of the input vector, which ended at 1.0 ms
@@ -3462,9 +3462,9 @@ Info: Simulation coverage is      29.12 %
 Info: Number of transitions in simulation is 44877
 Info: Vector file SCOMP_SRAM_sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 0 megabytes
-    Info: Processing ended: Thu Apr 16 09:46:03 2020
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 176 megabytes
+    Info: Processing ended: Thu Apr 16 11:45:01 2020
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
