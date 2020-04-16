@@ -24,7 +24,13 @@ ORG 0
 ;* Main code
 ;***************************************************************
 Main:
-	; Set the address to 5
+	; Set the upper address, even though the emulator doesn't support it
+	LOADI   1
+	OUT		SRAM_UPPER_ADDR
+	LOADI	5
+	IN 		SRAM_UPPER_ADDR
+	
+	; Set the lower address
 	LOADI   0
 	OUT		SRAM_UPPER_ADDR
 	LOADI   5
