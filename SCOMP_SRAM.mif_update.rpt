@@ -1,5 +1,5 @@
 MIF/HEX Update report for SCOMP_SRAM
-Mon Apr 13 21:28:30 2020
+Wed Apr 15 21:25:06 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -35,7 +35,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; MIF/HEX Update Summary                                        ;
 +-----------------------+---------------------------------------+
-; MIF/HEX Update Status ; Successful - Mon Apr 13 21:28:30 2020 ;
+; MIF/HEX Update Status ; Successful - Wed Apr 15 21:25:06 2020 ;
 ; Revision Name         ; SCOMP_SRAM                            ;
 ; Top-level Entity Name ; SCOMP_SRAM                            ;
 ; Family                ; Cyclone II                            ;
@@ -58,9 +58,9 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II MIF/HEX Update
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Apr 13 21:28:27 2020
+    Info: Processing started: Wed Apr 15 21:25:05 2020
 Info: Command: quartus_cdb SCOMP_SRAM -c SCOMP_SRAM --update_mif
-Warning: 323 out of 2048 addresses are reinitialized. The latest initialized data will replace the existing data. There are 323 warnings found, and 10 warnings are reported.
+Warning: 326 out of 2048 addresses are reinitialized. The latest initialized data will replace the existing data. There are 326 warnings found, and 10 warnings are reported.
     Warning: Memory Initialization File address 0 is reinitialized
     Warning: Memory Initialization File address 1 is reinitialized
     Warning: Memory Initialization File address 2 is reinitialized
@@ -75,8 +75,8 @@ Info: Processed the following Memory Initialization File(s)
     Info: Processed Memory Initialization File C:/users/ryan/My Documents/workspace_quartus/ECE2031-Project/simplesram.mif
 Info: Quartus II MIF/HEX Update was successful. 0 errors, 11 warnings
     Info: Peak virtual memory: 0 megabytes
-    Info: Processing ended: Mon Apr 13 21:28:30 2020
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Wed Apr 15 21:25:06 2020
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

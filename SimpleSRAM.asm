@@ -26,9 +26,9 @@ ORG 0
 Main:
 	; Set the address to 5
 	LOADI   0
-	OUT		SRAM_SET_UPPER
+	OUT		SRAM_UPPER_ADDR
 	LOADI   5
-	OUT		SRAM_SET_LOWER
+	OUT		SRAM_LOWER_ADDR
 	
 	; Write a value
 	LOADI   10
@@ -43,12 +43,17 @@ Main:
 	LOADI 	8
 	OUT		SRAM_INC_DATA
 	
+	IN		SRAM_LOWER_ADDR
+	
 	LOADI	5
-	OUT		SRAM_SET_LOWER
+	OUT		SRAM_LOWER_ADDR
 	IN		SRAM_DATA
 	LOADI 	6
-	OUT		SRAM_SET_LOWER
+	OUT		SRAM_LOWER_ADDR
 	IN		SRAM_DATA
+	
+	LOADI 	10
+	OUT 	SRAM_ADDR_JPOS
 
 	
 Done:
@@ -532,7 +537,9 @@ RIN:      EQU &HC8
 LIN:      EQU &HC9
 IR_HI:    EQU &HD0  ; read the high word of the IR receiver (OUT will clear both words)
 IR_LO:    EQU &HD1  ; read the low word of the IR receiver (OUT will clear both words)
-SRAM_SET_UPPER: EQU &H10  ; write the upper 2 bits of the SRAM address
-SRAM_SET_LOWER: EQU &H11 ; write the lower 16 bits of the SRAM address
+SRAM_UPPER_ADDR: EQU &H10  ; write the upper 2 bits of the SRAM address
+SRAM_LOWER_ADDR: EQU &H11 ; write the lower 16 bits of the SRAM address
 SRAM_DATA: EQU &H12 ; write the data to go to SRAM
 SRAM_INC_DATA: EQU &H13 ; write the data to go to SRAM and increment address
+SRAM_ADDR_JPOS: EQU &H14 ; offset the address in the positive direction
+SRAM_ADDR_JNEG: EQU &H15 ; offset the address in the negative direction
